@@ -24,7 +24,7 @@ wp core install \
 #install parent theme
 #wp theme install $WORDPRESS_THEME_NAME
 if !(wp theme is-installed $WORDPRESS_THEME_NAME) then
-  wp theme install $WORDPRESS_THEME_NAME
+  wp theme install $WORDPRESS_THEME_NAME --activate
 else
   echo "Theme $WORDPRESS_THEME_NAME already installed!"
 fi
